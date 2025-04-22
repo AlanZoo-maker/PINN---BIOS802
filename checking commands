@@ -1,0 +1,64 @@
+# Commands for checking Python files with `ruff` and `mypy`
+
+# For `ruff` (Linter)
+
+# 1. Check a specific file
+
+ruff check path/to/your/file.py
+# Example:
+ruff check src/main.py
+
+# 2. Check all Python files in a directory
+
+ruff check path/to/your/directory
+# Example:
+ruff check src
+
+# 3. Check multiple specific files
+
+ruff check path/to/file1.py path/to/file2.py
+# Example:
+ruff check src/main.py src/test_file.py
+
+# 4. Check all files in the current directory and subdirectories
+
+ruff check .
+
+# 5. Check with an exclusion list (e.g., exclude venv, Lib/site-packages)
+
+ruff check . --exclude venv,Lib/site-packages
+
+
+# For `mypy` (Type Checker)
+
+# 1. Check a specific file
+
+python -m mypy path/to/your/file.py
+# Example:
+python -m mypy src/main.py
+
+# 2. Check all Python files in a directory
+
+python -m mypy path/to/your/directory
+# Example:
+python -m mypy src
+
+# 3. Check multiple specific files
+
+python -m mypy path/to/file1.py path/to/file2.py
+# Example:
+python -m mypy src/main.py src/test_file.py
+
+# 4. Check with specific configurations (using pyproject.toml)
+
+# Automatically uses settings from pyproject.toml file in the project root.
+
+# Commonly used commands:
+
+# `ruff check src/main.py`  : Check the `main.py` file with `ruff`
+# `ruff check src`          : Check all files in the `src` directory with `ruff`
+# `ruff check .`            : Check all Python files in the current directory and subdirectories
+# `python -m mypy src/main.py` : Check the `main.py` file with `mypy`
+# `python -m mypy src`      : Check all files in the `src` directory with `mypy`
+# `python -m mypy .`        : Check all Python files in the current directory and subdirectories with `mypy`
+# `ruff check . --exclude venv,Lib/site-packages` : Check all files, excluding `venv` and `Lib/site-packages`, with `ruff`

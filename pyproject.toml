@@ -1,0 +1,36 @@
+[tool.mypy]
+mypy_path = "src"
+explicit_package_bases = true
+ignore_missing_imports = true
+namespace_packages = true
+strict = true
+files = ["src",
+    "tests"# Specify that only main.py should be checked
+
+    ]
+[tool.ruff]
+line-length = 79
+exclude = [
+    ".github/**",         # Exclude GitHub workflows or scripts
+    "pyproject.toml",     # Exclude pyproject.toml
+    "venv/**",             # Exclude virtual environment files
+    "Lib/site-packages/**" # Exclude installed packages
+]
+include = [
+    "src",
+    "tests"
+]
+
+[tool.ruff.lint]
+select = [
+"D", # pydocstyle
+"E", # pycodestyle
+"F", # pyflakes
+"I", # isort
+"B", # flake8-bugbear
+"SIM", # flake8-simplify
+"UP", # pyupgrade
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

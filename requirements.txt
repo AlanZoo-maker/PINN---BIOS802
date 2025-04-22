@@ -1,4 +1,4 @@
-numpy
-torch
-matplotlib
+torch>=1.8.0
+matplotlib>=3.4.0
+numpy>=1.19.0
 

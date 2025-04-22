@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/pinn_kinetics/__init__.py
+src/pinn_kinetics/model.py
+src/pinn_kinetics/run_training.py
+src/pinn_kinetics/train.py
+src/pinn_kinetics/utils.py
+src/pinn_kinetics.egg-info/PKG-INFO
+src/pinn_kinetics.egg-info/SOURCES.txt
+src/pinn_kinetics.egg-info/dependency_links.txt
+src/pinn_kinetics.egg-info/requires.txt
+src/pinn_kinetics.egg-info/top_level.txt

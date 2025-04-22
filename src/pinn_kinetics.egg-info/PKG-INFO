@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: pinn-kinetics
+Version: 0.1.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.8.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: numpy>=1.19.0
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+
+# PINN---BIOS802
+Modeling Michealis-Menten Enzymes using physics informed neural networks to predict enzyme behavior.
+
+##Software Architecture
+This project will use Python in PyCharm Community Edition to model michealis menten enzyme kinectics with machine learning aspects. 
+
+Frameworks: mainly PyTorch will be used, its autograd() function will be employed to quickly calculate gradients.
+
