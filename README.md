@@ -63,7 +63,8 @@ As in all neural network models, we are interested in the precision of the model
 In our model, we have included a set of generated points a researcher might generate from 0 <t < 0.5. The performance of 
 the model outside of these points largely depends on the accuracy of the weights of the PINN, which are influenced by 
 real-world phenomena. (In this simple case, this just means that the first two terms of the loss function are penalized 
-more heavily than the last two terms, for reasons described above.)
+more heavily than the last two terms, for reasons described above.) Make sure that the hyperparameteres penalize the 
+initial conditions more than the boundary conditions; this is a key assumption that cannot be violated.
 
 Overall, the neural network learns the model fairly consistently, around 1000 training steps is enough to learn the 
 simple reaction.
