@@ -62,3 +62,5 @@ python -m mypy src/main.py src/test_file.py
 # `python -m mypy src`      : Check all files in the `src` directory with `mypy`
 # `python -m mypy .`        : Check all Python files in the current directory and subdirectories with `mypy`
 # `ruff check . --exclude venv,Lib/site-packages` : Check all files, excluding `venv` and `Lib/site-packages`, with `ruff`
+
+black --line-length 79 src/Phase1.py

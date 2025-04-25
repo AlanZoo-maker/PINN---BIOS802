@@ -6,7 +6,7 @@ from train import train
 
 def main() -> None:
     # Constants
-    A0, k = 2.0, 10
+    a0, k = 3.0, 15
 
     # Define training points
     t_boundary = torch.tensor([[0.0]], requires_grad=True)
@@ -17,7 +17,9 @@ def main() -> None:
     pinn = FCN(1, 1, 32, 3)
 
     # Train the model
-    train(pinn, t_boundary, t_physics, t_test, A0, k)
+    df_losses = train(pinn, t_boundary, t_physics, t_test, a0, k)
+
+    print(df_losses)
 
 
 if __name__ == "__main__":
